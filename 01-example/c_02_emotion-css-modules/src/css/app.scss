@@ -1,0 +1,25 @@
+body{
+  font-family: 'Microsoft JhengHei';
+}
+
+section {
+  border: 2px solid #bdc3c7;
+  margin: 10px 0;
+  padding: 2.5rem 1rem 1rem;
+  border-radius: 8px;
+  position: relative;
+}
+
+section[data-name]::before {
+  z-index: 1;
+  content: attr(data-name);
+  pointer-events: none;
+  border-radius: .25rem;
+  padding: 0.1rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: white;
+  background-color: #27ae60;
+  font-size: 16px;
+}

@@ -1,0 +1,8 @@
+.btn {
+  @apply p-2 bg-black text-white rounded-lg border;
+  background-color: theme('colors.red.500');
+}
+
+.myBTN {
+  @apply border bg-white p-2 rounded data-active:bg-primary;
+}

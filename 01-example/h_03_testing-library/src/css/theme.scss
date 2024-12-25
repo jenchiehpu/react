@@ -1,0 +1,53 @@
+*:focus{
+  outline: none !important;
+}
+.debug{
+  position: relative;
+  &:before{
+    content: attr(data-name);
+    z-index: 1;
+    pointer-events: none;
+    border-radius: .25rem;
+    padding: 0.1rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: white;
+    background-color:#9b59b6;
+    font-size: 15px;
+  }
+}
+section {
+  position: relative;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+  border: 1px solid rgba(0,0,0,.125);
+  border-radius: .25rem;
+  padding: 2.5rem 1rem 1rem;
+  box-shadow: 0 1.6px 3.6px 0 rgba(0,0,0,0.132), 0 0.3px 0.9px 0 rgba(0,0,0,0.108);
+  margin: 1rem 0;
+  &:before{
+    z-index: 1;
+    content: attr(data-name);
+    pointer-events: none;
+    border-radius: .25rem;
+    padding: 0.1rem 0.5rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: white;
+    background-color:#2980b9;
+    font-size: 20px;
+  }
+  &.style-1{
+    background-color:#ededed;
+    &:before{
+      background-color:#e74c3c;
+    }
+  }
+  &.style-2:before{
+    background-color:#2c3e50;
+  }
+}

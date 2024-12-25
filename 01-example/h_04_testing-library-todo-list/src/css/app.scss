@@ -1,0 +1,45 @@
+body{
+  font-family: 'Microsoft JhengHei';
+}
+.app{
+  max-width: 500px;
+}
+.todo-list{
+  border-radius: 5px;
+}
+.todo-list>h1{
+  text-align: center;
+  margin: 8px 0 12px;
+  padding-bottom: 4px;
+  font-size: 28px;
+  font-weight: normal;
+  color: #68d;
+  border-bottom: 1px solid #ddd;
+}
+
+
+
+@keyframes show{
+  from{
+    opacity:0;
+    transform: translateY(-50px);
+  }
+  to{
+    opacity:1;
+    transform: none;
+  }
+}
+
+.todo-items{
+  padding-left: 0;
+  list-style: none;
+}
+.todo-item{
+  cursor: pointer;
+  position: relative;
+  padding: 12px;
+  font-size: 16px;
+  color: #333;
+  transition: background-color .3s;
+  animation: show .3s ease-in-out;
+}

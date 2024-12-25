@@ -1,0 +1,54 @@
+.root {
+  display: inline-flex;
+  margin-right: 10px;
+  align-items: center;
+  position: relative;
+  &:hover {
+    .decorate:before {
+      border-width:4px;
+      border-color: #555555;
+    }
+  }
+  &[data-disabled="true"]{
+    opacity: 0.35;
+    pointer-events: none;
+  }
+  input{
+    font-family: inherit;
+    font-size: 100%;
+    line-height: 1.15;
+    margin: 0;
+    overflow: visible;
+    box-sizing: border-box;
+    padding: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: .0001;
+    z-index: 1;
+    cursor: pointer;
+  }
+  input:checked + .decorate:before{
+    border-width: 7px;
+  }
+}
+.decorate {
+  $size : 20px;
+  display: inline-block;
+  width: $size;
+  height: $size;
+  flex-grow: 0;
+  flex-shrink: 0;
+  margin-right: 5px;
+  &:before{
+    display:block;
+    content: '';
+    width: $size;
+    height: $size;
+    position: absolute;
+    border-radius: 50%;
+    transition: border .13s ease-in-out;
+    border: 2px solid black;
+  }
+}

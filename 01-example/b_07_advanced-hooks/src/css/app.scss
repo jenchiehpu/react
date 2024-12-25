@@ -1,0 +1,13 @@
+button{
+  padding:8px;
+}
+
+.my-video{
+  left: var(--position-x) !important;
+  top: var(--position-y) !important;
+
+  transition: all 1s;
+  &.fixed {
+    position: fixed;
+  }
+}

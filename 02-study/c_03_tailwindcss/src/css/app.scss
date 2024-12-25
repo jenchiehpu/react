@@ -1,0 +1,12 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import './style';
+html {
+  font-size: 125%;
+}
+.app{
+  max-width: 640px;
+}

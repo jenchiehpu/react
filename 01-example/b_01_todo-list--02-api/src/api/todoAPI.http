@@ -1,0 +1,33 @@
+
+@name = milkmidi
+
+
+### GET Todolist
+GET https://k9wvmn0z75.sse.codesandbox.io/api/list/{{name}} HTTP/1.1
+content-type: application/json
+
+
+### POST Todolist
+POST https://k9wvmn0z75.sse.codesandbox.io/api/list/{{name}} HTTP/1.1
+content-type: application/json
+
+{
+  "text": "hi,{{name}}"
+}
+
+
+### Toggle Todo
+PUT https://k9wvmn0z75.sse.codesandbox.io/api/list/{{name}} HTTP/1.1
+content-type: application/json
+
+{
+  "id": "3b517ce2-5295-11e9-8647-d663bd873d93"
+}
+
+### Delete Todo
+DELETE https://k9wvmn0z75.sse.codesandbox.io/api/list/{{name}} HTTP/1.1
+content-type: application/json
+
+{
+  "id": "3b517ce2-5295-11e9-8647-d663bd873d93"
+}

@@ -1,0 +1,33 @@
+@import './theme.scss';
+
+body {
+  color: black;
+  background-color: #fff;
+  transition: background-color .3s;
+  font-size: 130%;
+  &.dark{
+    color: white;
+    background-color:rgba(46, 49, 49, 1);
+  }
+}
+
+.app{
+  width: 460px;
+  padding: 0 10px;
+  font-family: 'Microsoft JhengHei';
+  margin: 10px auto;
+  &.dark{
+    background-color: #222222;
+    section {
+      color: black;
+    }
+  }
+
+}
+
+.button{
+  &.dark{
+    color: #ffffff;
+    background-color: #222222;
+  }
+}

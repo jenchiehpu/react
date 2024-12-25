@@ -1,0 +1,15 @@
+.modal-backdrop{
+  background-color:rgba(0,0,0,0.4);
+}
+.modal-content{
+  position: relative;
+  padding-top: 40px;
+  .modal-close{
+    border-radius: 50%;
+    position: absolute;
+    top:0;
+    right:0;
+    width: 40px;
+    height: 40px;
+  }
+}

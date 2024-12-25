@@ -1,0 +1,19 @@
+.category-item {
+  // display: inline-block;
+  border: 2px solid black;
+  border-radius: 20px;
+  margin-bottom: 20px;
+}
+.category-item__img {
+  border-radius: 20px;
+  width: 100%;
+}
+.category-item__name {
+  font-size: 30px;
+  text-align: center;
+  font-weight: bold;
+}
+.category-item__quote:not(:empty) {
+  border: 2px solid black;
+  margin: 5px;
+}
